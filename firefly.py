@@ -37,7 +37,7 @@ A=np.zeros((N,N))
 
 def resetting(dist):
     if(dist<=thres):
-        return (1-dist/thres)*0.008#strength of resetting
+        return (1-dist/thres)*0.003#strength of resetting
     elif(dist>thres):
         return 0
 
@@ -60,7 +60,7 @@ for t in range(int(T/dt)):
             res[i][int(t/10)]=np.mod(theta[i],2*pi)
         sum=0
         for j in range(N):
-            sum+=-A[i][j]*np.sin(tmptheta[j]-tmptheta[i])
+            sum+=A[i][j]*np.sin(tmptheta[j]-tmptheta[i])
         theta[i]+=(omega[i]+sum)*dt
         
 #add spheres
