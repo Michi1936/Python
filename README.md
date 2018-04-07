@@ -1,3 +1,4 @@
 # Python
+Strogatzの教科書Nonlinear Dynamics and Chaosに記載されていたホタルの発光の同期現象を、Blender上で再現するpythonコード
 １.ホタルの発光の同期を計算
-２.blenderでオブジェクトを配置し計算結果に従ってオブジェクトを発行させる
+２.blenderでオブジェクトを配置し計算結果に従ってオブジェクトを発光させる
